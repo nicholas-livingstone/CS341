@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     printf("X: %X\n", x); 
     printf("Y: %X\n", y); 
 
-    lsb = 0xFF;  /* Least significant bit of x */
+    lsb = 0xFF;  /* mask for Least significant byte of x */
     
     result = (y & ~lsb) | (x & lsb); 
 
